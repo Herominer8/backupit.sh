@@ -6,4 +6,7 @@ Just Run backupit.sh And Fill The Required Values, Like Source Directory Name An
 
 #If You Had An Error While Using backupit.sh Just Run fix.sh Then Run backupit.sh Again
 
+=============Important=============
+Add The Script To Your Cronjobs Or Task Scheduler
+
 #Wrote By Herominer
