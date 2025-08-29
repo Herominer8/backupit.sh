@@ -1,5 +1,4 @@
 #!/bin/bash
-sed -i 's/\r$//' backupit.sh
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -63,3 +62,4 @@ else
     echo -e "${RED}The Source File Or Directory Doesn't Exist${NC}"
 
 fi
+
