@@ -13,15 +13,15 @@ echo -e "${GREEN}MAKEBACKUP BASH SCRIPT WROTE BY Herominer8${NC}"
 echo -e "${BLUE}==========================================${NC}"
 echo " "
 echo " "
-read -e -p "${YELLOW}Current File Location${NC}: " SOURCE_DIR
+read -e -p "Current File Location: " SOURCE_DIR
 echo " "
-read -e -p "${YELLOW}Filename${NC}: " FILE_NAME
+read -e -p "Filename: " FILE_NAME
 echo " "
-read -e -p "${YELLOW}Where Do You Want To Save Your Backup?${NC}: " BACKUPS_DIR
+read -e -p "Where Do You Want To Save Your Backup?: " BACKUPS_DIR
 echo " "
-read -e -p "${YELLOW}When Should The Backup Be Deleted?(Day)${NC}: " RETENTION_DAYS
+read -e -p "When Should The Backup Be Deleted?(Day): " RETENTION_DAYS
 echo " "
-read -e -p "${YELLOW}Logs Filename: ${NC}: " LOG_FILE
+read -e -p "Logs Filename: " LOG_FILE
 echo " "
 
 if [[ -z "$RETENTION_DAYS" ]]; then
@@ -61,4 +61,5 @@ if [ -d "$SOURCE_DIR" ] && [ -f "$SOURCE_DIR/$FILE_NAME" ]; then
     echo "Backup From $FILE_NAME Successfully Done ! Location ${BACKUPS_DIR} Time ${YEAR}_${MONTH}_${DAY}_${HOUR}_${MINUTE}_${SECOND}" >> "$LOG_FILE"
 else
     echo -e "${RED}The Source File Or Directory Doesn't Exist${NC}"
+
 fi
